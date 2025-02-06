@@ -12,7 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskAndroid"
         tools:targetApi="31" >
-
+        <activity
+            android:name=".drawable.customselector.CustomDrawableSelector"
+            android:exported="false" />
+        <activity
+            android:name=".drawable.DrawableMain"
+            android:exported="false" />
+        <activity
+            android:name=".drawable.customdrawable.MakecustomDrawable"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >
