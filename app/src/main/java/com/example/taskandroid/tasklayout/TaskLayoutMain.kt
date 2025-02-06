@@ -9,7 +9,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.taskandroid.R
-import com.example.taskandroid.taskactivity.TaskActivityMain
 import com.example.taskandroid.tasklayout.constraintlayoutask.ConstraintLayoutProfilePage
 import com.example.taskandroid.tasklayout.formwithscrolltask.LinearLayOutForm
 import com.example.taskandroid.tasklayout.framelayouttask.FrameLayoutTask
