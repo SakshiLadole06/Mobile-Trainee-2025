@@ -10,7 +10,6 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.taskandroid.R
 import com.example.taskandroid.taskactivity.data_pass.DataPass
 import com.example.taskandroid.taskactivity.lifecycle.LifeCycleActivity
-import com.example.taskandroid.tasklayout.TaskLayoutMain
 
 class TaskActivityMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
