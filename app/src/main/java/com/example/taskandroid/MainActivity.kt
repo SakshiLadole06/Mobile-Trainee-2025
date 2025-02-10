@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        
         //Button for the clicking 1. Activity
         val actLogBtn:Button =findViewById(R.id.btn1)
         actLogBtn.setOnClickListener {
