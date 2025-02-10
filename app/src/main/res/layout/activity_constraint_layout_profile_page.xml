@@ -100,12 +100,13 @@
         android:id="@+id/phoneInput"
         android:layout_width="313dp"
         android:layout_height="42dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:hint="Enter Your Mobile Number"
         android:inputType="phone"
         android:paddingHorizontal="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/textPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textPhone"
         app:layout_constraintTop_toBottomOf="@id/emailInput" />
 
     <TextView
