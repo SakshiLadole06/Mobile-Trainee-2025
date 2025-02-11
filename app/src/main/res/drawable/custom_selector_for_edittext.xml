@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="2dp" android:color="@color/grey" />
+            <corners android:radius="15dp"/>
+        </shape>
+    </item>
+</selector>
+
+
+<!--<item android:state_enabled="true">-->
+<!--    <shape android:padding="10dp"-->
+<!--        android:shape="rectangle">-->
+<!--        <corners android:bottomLeftRadius="15dp" android:bottomRightRadius="15dp" android:topLeftRadius="15dp" android:topRightRadius="15dp" />-->
+<!--    </shape>-->
+<!--</item>-->
+
+    <!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--&lt;!&ndash;    <item&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:state_focused="true">&ndash;&gt;-->
+    <!--&lt;!&ndash;        <stroke&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:width="2dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:color="@color/grey"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;        <corners android:radius="10dp"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;    </item>&ndash;&gt;-->
+    <!--&lt;!&ndash;    <item android:drawable="@android:color/transparent"/>&ndash;&gt;-->
+    <!--</selector>-->
+
