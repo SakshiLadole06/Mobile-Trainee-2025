@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         val demanResponseBtn:Button =findViewById(R.id.btn4)
         demanResponseBtn.setOnClickListener {
             val intent = Intent(this, dimen_responsive::class.java)
-
+            startActivity(intent)
+        }
         //Button for the clicking 3. Drawable
         val drawableCustomBtn:Button =findViewById(R.id.btn3)
         drawableCustomBtn.setOnClickListener {
