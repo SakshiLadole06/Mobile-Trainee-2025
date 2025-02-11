@@ -7,19 +7,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="12dp"
-    tools:context=".MainActivity">
+    tools:context=".taskactivity.TaskActivityMain">
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/activitylog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1. Activity"/>
+        android:text="1. Activity Log" />
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/passDataBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2. Layouts"/>
-
+        android:text="2. Data Passing"/>
 
 </LinearLayout>

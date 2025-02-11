@@ -12,7 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskAndroid"
         tools:targetApi="31" >
-
+        <activity
+            android:name=".taskactivity.data_pass.DataPass"
+            android:exported="false" />
+        <activity
+            android:name=".taskactivity.lifecycle.LifeCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".taskactivity.data_pass.SecondActivityGetDataAndPaasIt"
+            android:exported="false" />
+        <activity
+            android:name=".taskactivity.TaskActivityMain"
+            android:exported="false" />
         <activity
             android:name=".tasklayout.framelayouttask.FrameLayoutTask"
             android:exported="false" />
