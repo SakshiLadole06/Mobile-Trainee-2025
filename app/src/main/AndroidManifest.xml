@@ -21,6 +21,32 @@
         <activity
             android:name=".drawable.customdrawable.MakecustomDrawable"
             android:exported="false" />
+      <activity
+            android:name=".taskactivity.data_pass.DataPass"
+            android:exported="false" />
+        <activity
+            android:name=".taskactivity.lifecycle.LifeCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".taskactivity.data_pass.SecondActivityGetDataAndPaasIt"
+            android:exported="false" />
+        <activity
+            android:name=".taskactivity.TaskActivityMain"
+            android:exported="false" />
+        <activity
+            android:name=".tasklayout.framelayouttask.FrameLayoutTask"
+            android:exported="false" />
+        <activity
+            android:name=".tasklayout.constraintlayoutask.ConstraintLayoutProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".tasklayout.TaskLayoutMain"
+            android:exported="false" />
+
+        <activity
+            android:name=".tasklayout.formwithscrolltask.LinearLayOutForm"
+            android:exported="false" />
+        
         <activity
             android:name=".MainActivity"
             android:exported="true" >
