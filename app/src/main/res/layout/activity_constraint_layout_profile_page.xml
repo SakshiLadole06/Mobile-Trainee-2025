@@ -16,18 +16,18 @@
         android:text="  Edit Profile"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/profileImage"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/baseline_account_circle_24"
-        app:layout_constraintTop_toBottomOf="@id/textProfile"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textProfile" />
 
     <ImageView
         android:id="@+id/addIcon"
@@ -41,41 +41,45 @@
         android:id="@+id/textName"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="195dp"
+        android:layout_marginStart="16dp"
         android:text="Name"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/nameInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/profileImage"
+        app:layout_constraintTop_toTopOf="@id/nameInput"
+        />
 
     <EditText
         android:id="@+id/nameInput"
         android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:hint="Enter Your First Name"
         android:inputType="textPersonName"
         android:paddingHorizontal="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textName"
+        app:layout_constraintStart_toEndOf="@id/textName"
         app:layout_constraintTop_toBottomOf="@id/profileImage" />
 
     <TextView
         android:id="@+id/textEmail"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
         android:paddingVertical="8dp"
         android:text="Email"
         android:textSize="20sp"
-        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/emailInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textName" />
+        app:layout_constraintTop_toTopOf="@id/emailInput"
+        app:layout_constraintVertical_bias="0.0" />
+
     <EditText
         android:id="@+id/emailInput"
         android:layout_width="0dp"
         android:layout_height="45dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:hint="Enter Your Email-Id"
         android:inputType="textEmailAddress"
         android:paddingHorizontal="12dp"
@@ -87,25 +91,26 @@
         android:id="@+id/textPhone"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:paddingVertical="8dp"
         android:text="Phone"
         android:textSize="20sp"
-        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/phoneInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textEmail" />
+        app:layout_constraintTop_toTopOf="@id/phoneInput"
+        app:layout_constraintVertical_bias="0.888" />
 
     <EditText
         android:id="@+id/phoneInput"
-        android:layout_width="313dp"
+        android:layout_width="0dp"
         android:layout_height="42dp"
         android:layout_marginTop="8dp"
         android:hint="Enter Your Mobile Number"
         android:inputType="phone"
         android:paddingHorizontal="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textPhone"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailInput" />
 
     <TextView
@@ -113,12 +118,13 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
         android:paddingVertical="8dp"
         android:text="Address"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/addressInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textPhone" />
+        app:layout_constraintTop_toTopOf="@id/addressInput"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/addressInput"
@@ -129,7 +135,6 @@
         android:inputType="textCapCharacters"
         android:paddingHorizontal="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textAddress"
         app:layout_constraintTop_toBottomOf="@id/phoneInput" />
 
@@ -137,13 +142,14 @@
         android:id="@+id/textOldPassword"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_marginStart="16dp"
         android:paddingVertical="8dp"
         android:text="Old Password"
-        app:layout_constraintTop_toBottomOf="@id/textAddress"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/oldPasswordInput"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="16dp"/>
-
+        app:layout_constraintTop_toTopOf="@id/oldPasswordInput"
+        />
     <EditText
         android:id="@+id/oldPasswordInput"
         android:layout_width="0dp"
@@ -153,7 +159,6 @@
         android:inputType="textPassword"
         android:paddingHorizontal="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textOldPassword"
         app:layout_constraintTop_toBottomOf="@id/addressInput" />
 
@@ -161,13 +166,14 @@
         android:id="@+id/textNewPassword"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_marginStart="16dp"
         android:paddingVertical="8dp"
         android:text="New Password"
-        app:layout_constraintTop_toBottomOf="@id/textOldPassword"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/newPasswordInput"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="16dp"/>
-
+        app:layout_constraintTop_toTopOf="@id/newPasswordInput"
+        />
     <EditText
         android:id="@+id/newPasswordInput"
         android:layout_width="0dp"
@@ -177,7 +183,6 @@
         android:inputType="textPassword"
         android:paddingHorizontal="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textNewPassword"
         app:layout_constraintTop_toBottomOf="@id/oldPasswordInput" />
 
@@ -197,13 +202,13 @@
         android:id="@+id/saveButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Save Update"
-        android:backgroundTint="@color/shadeGreen"
-        app:layout_constraintTop_toBottomOf="@id/newPasswordInput"
-        app:layout_constraintStart_toEndOf="@id/cancelButton"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="6dp" />
+        android:backgroundTint="@color/shadeGreen"
+        android:text="Save Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cancelButton"
+        app:layout_constraintTop_toBottomOf="@id/newPasswordInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
