@@ -26,6 +26,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="3. Drawables"/>
-
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. Dimens for responsive design"/>
 
 </LinearLayout>
+
