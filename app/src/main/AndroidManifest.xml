@@ -25,6 +25,20 @@
             android:name=".taskactivity.TaskActivityMain"
             android:exported="false" />
         <activity
+            android:name=".tasklayout.framelayouttask.FrameLayoutTask"
+            android:exported="false" />
+        <activity
+            android:name=".tasklayout.constraintlayoutask.ConstraintLayoutProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".tasklayout.TaskLayoutMain"
+            android:exported="false" />
+
+        <activity
+            android:name=".tasklayout.formwithscrolltask.LinearLayOutForm"
+            android:exported="false" />
+        
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>

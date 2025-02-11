@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.taskandroid.tasklayout.TaskLayoutMain
 import com.example.taskandroid.taskactivity.TaskActivityMain
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,13 @@ class MainActivity : AppCompatActivity() {
         val actLogBtn:Button =findViewById(R.id.btn1)
         actLogBtn.setOnClickListener {
             val intent = Intent(this, TaskActivityMain::class.java)
+            startActivity(intent)
+        }
+        
+        //Button for the clicking 2. layout
+        val dataPassBtn:Button =findViewById(R.id.btn2)
+        dataPassBtn.setOnClickListener {
+            val intent = Intent(this, TaskLayoutMain::class.java)
             startActivity(intent)
         }
 
