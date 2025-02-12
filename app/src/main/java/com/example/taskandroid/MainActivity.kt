@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.taskandroid.taskviewpager_tablayout.TaskViewpagerTabLayout
 import com.example.taskandroid.dimenResponse.dimen_responsive
 import com.example.taskandroid.drawable.DrawableMain
 import com.example.taskandroid.drawable.customdrawable.MakecustomDrawable
@@ -17,6 +18,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val viewPageTAbLayoutBtn: Button =findViewById(R.id.btn5)
+        viewPageTAbLayoutBtn.setOnClickListener {
+            val intent = Intent(this, TaskViewpagerTabLayout::class.java)
+            startActivity(intent)
+        }
         //Button for the clicking 4. Dimens for responsive design
         val demanResponseBtn: Button = findViewById(R.id.btn4)
         demanResponseBtn.setOnClickListener {
