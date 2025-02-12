@@ -13,7 +13,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 class TaskViewpagerTabLayout : AppCompatActivity() {
     private lateinit var tabLayout: TabLayout
     private lateinit var viewPager: ViewPager2
-
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

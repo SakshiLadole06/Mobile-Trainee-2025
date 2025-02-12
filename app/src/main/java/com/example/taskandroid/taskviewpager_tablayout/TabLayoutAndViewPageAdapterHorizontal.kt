@@ -8,14 +8,12 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 class TabLayoutAndViewPageAdapterHorizontal(fragmentActivity: FragmentActivity): FragmentStateAdapter(fragmentActivity) { // its ok
 //class TabLayoutAndViewPageAdapterHorizontal(fragmentManager: FragmentManager, lifecycle: Lifecycle, ) : FragmentStateAdapter(fragmentManager, lifecycle) {  //but better way use this
 
-    private val itemCount = 3
     override fun getItemCount(): Int {
         return 3
     }
 
     override fun createFragment(position: Int): Fragment {
-        val realPosition = position % itemCount
-        return when (realPosition) {
+        return when (position) {
             0 -> {NatureFragment()}
             1 -> {CityFragment()}
             2 -> {UniverseFragment()}

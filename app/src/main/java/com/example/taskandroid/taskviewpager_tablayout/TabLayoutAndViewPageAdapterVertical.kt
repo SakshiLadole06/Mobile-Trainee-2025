@@ -9,6 +9,5 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class TabLayoutAndViewPageAdapterVertical (fragmentManager: FragmentManager,lifecycle: Lifecycle,val fragmrnts:List<Fragment>): FragmentStateAdapter(fragmentManager, lifecycle) {
     override fun getItemCount(): Int = fragmrnts.size
-
     override fun createFragment(position: Int): Fragment = fragmrnts[position]
 }
