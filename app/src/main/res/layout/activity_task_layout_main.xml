@@ -7,36 +7,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="12dp"
-    tools:context=".MainActivity">
+    tools:context=".tasklayout.TaskLayoutMain">
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/signUpBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1. Activity"/>
+        android:text="1. Sign-Up Form"/>
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/profilePageBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2. Layouts"/>
+        android:text="2. Profile Page"/>
 
     <Button
-        android:id="@+id/btn3"
+        android:id="@+id/frameLayputBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="3. Drawables"/>
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="4. Dimens for responsive design"/>
-
-    <Button
-        android:id="@+id/btn5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="5. ViewPager and TabLayout"/>
+        android:text="3. Frame Layout"/>
 
 </LinearLayout>
-
