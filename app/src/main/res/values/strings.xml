@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Task Android</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">CHETAN BHAGAT</string>
+    <string name="country">India</string>
+    <string name="qoute">The journey from the novel to film and Beyond</string>
+    <string name="first_book">Chetan Bhagat\'s first best-selling book was \"Five Point Someone,\" which was published in 2004; it is considered the book that launched his career as a widely popular author in India. Key points about \"Five Point Someone\":\n- Focus on student life\n- Relevance to Indian youth\n- Impact on his career</string>
+    <string name="second_book">The novel revolves around a group of six call center employees working at a call center in Gurgaon, Haryana, India. The themes involve the anxieties and insecurities of the young Indian middle class, such as career, inadequacy, marriage, and family conflicts. This is the second best-selling novel by Chetan Bhagat.</string>
+    <string name="third_book">The 3 Mistakes of My Life is the third novel written by Chetan Bhagat. The book was published in May 2008 and had an initial print run of 420,000. The novel follows the story of three friends and is based on the city of Ahmedabad in western India. This is the third best-selling novel by Chetan Bhagat.</string>
+    <string name="fourth_book">2 States: The Story of My Marriage, commonly known as 2 States, is a 2009 novel written by Chetan Bhagat. It is the story about a couple coming from two states in India, who face hardships in convincing their parents to approve of their marriage. Bhagat wrote this novel after quitting his job as an investment banker.</string>
+    <string name="fifth_book">One Indian Girl is a 2016 novel by Indian author Chetan Bhagat. The story follows Radhika Mehta, a senior employee in the distressed debt group at Goldman Sachs. The novel explores the personal and professional challenges she faces within the financial sector.</string>
+    <string name="sixth_book">The Girl in Room 105 is the eighth novel and the tenth book overall written by the Indian author Chetan Bhagat. The book became a bestseller based on prearranged sales alone. It tells about a coaching class tutor who goes to wish his ex-girlfriend on her birthday and finds her murdered.</string>
+    <string name="seventh_book">\'Making India Awesome: New Essays and Columns\' by renowned Indian author Chetan Bhagat is a book that showers light on India\'s most obstinate snags—unemployment, violence, poverty, discrimination against women, religious fundamentalism, illiteracy and communal violence.</string>
+    <string name="name_first">1. Five Point Someone</string>
+    <string name="name_second">2. One Night @ The Call Center</string>
+    <string name="name_third">3. The 3 Mistakes of My Life</string>
+    <string name="name_fourth">4. 2 States</string>
+    <string name="name_fifth">5. One Indian Girl</string>
+    <string name="name_sixth">6. The Girl In Room 105</string>
+    <string name="name_seventh">7. Making India Awesome</string>
+    <string name="prof_name">Annonymus</string>
+    <string name="c1">Nice Books</string>
+    <string name="c2">Awesome</string>
+    <string name="c3">I couldn\'t put it down.</string>
+    <string name="c4">A must-read</string>
+</resources>
