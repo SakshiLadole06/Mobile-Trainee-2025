@@ -10,6 +10,8 @@ import com.example.taskandroid.drawable.DrawableMain
 import com.example.taskandroid.task_appbar_toolbar.TaskAppbarToolbarMain
 import com.example.taskandroid.tasklayout.TaskLayoutMain
 import com.example.taskandroid.taskactivity.TaskActivityMain
+import com.example.taskandroid.tasksnackbarfab.TaskSnackBarFabMain
+import com.example.taskandroid.taskfonts.TaskFontsMain
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +57,20 @@ class MainActivity : AppCompatActivity() {
         val appBarToolBarBtn: Button = findViewById(R.id.btn6)
         appBarToolBarBtn.setOnClickListener {
             val intent = Intent(this, TaskAppbarToolbarMain::class.java)
+            startActivity(intent)
+        }
+        
+        //Button for the clicking 7. Task SnackBar Fab
+        val snackbarFabbtn: Button = findViewById(R.id.btn7)
+        snackbarFabbtn.setOnClickListener {
+            val intent = Intent(this, TaskSnackBarFabMain::class.java)
+            startActivity(intent)
+        }
+        
+        //Button for the clicking 8. Fonts
+        val fontBtn: Button = findViewById(R.id.btn8)
+        fontBtn.setOnClickListener {
+            val intent = Intent(this, TaskFontsMain::class.java)
             startActivity(intent)
         }
     }
