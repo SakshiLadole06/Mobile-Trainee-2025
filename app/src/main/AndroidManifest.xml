@@ -19,7 +19,13 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+      </activity>
+        <activity
+            android:name=".task_appbar_toolbar.CollapsingToolBar"
+            android:exported="false" />
+        <activity
+            android:name=".task_appbar_toolbar.TaskAppbarToolbarMain"
+            android:exported="false" />
         <activity
             android:name=".taskfonts.TaskFontsMain"
             android:exported="false" />
@@ -71,7 +77,6 @@
         <activity
             android:name=".tasklayout.formwithscrolltask.LinearLayOutForm"
             android:exported="false" />
-       
     </application>
 
 </manifest>
