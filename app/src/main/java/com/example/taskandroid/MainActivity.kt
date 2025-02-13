@@ -44,32 +44,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
-        //Button for the clicking 2. layout
-        val dataPassBtn: Button = findViewById(R.id.btn2)
-        dataPassBtn.setOnClickListener {
-            val intent = Intent(this, TaskLayoutMain::class.java)
-            startActivity(intent)
-        }
-
-        //Button for the clicking 2. layout
-        val fontsBtn: Button = findViewById(R.id.btn8)
-        dataPassBtn.setOnClickListener {
-            val intent = Intent(this, TaskLayoutMain::class.java)
-            startActivity(intent)
-        }
-    }
-}
             //Button for the clicking 2. layout
             val dataPassBtn: Button = findViewById(R.id.btn2)
             dataPassBtn.setOnClickListener {
                 val intent = Intent(this, TaskLayoutMain::class.java)
-                startActivity(intent)
-            }
-
-            //Button for the clicking 7. Snack Bar
-            val snackBarBtn: Button = findViewById(R.id.btn7)
-            snackBarBtn.setOnClickListener {
-                val intent = Intent(this, TaskSnackBarFabMain::class.java)
                 startActivity(intent)
             }
         }
