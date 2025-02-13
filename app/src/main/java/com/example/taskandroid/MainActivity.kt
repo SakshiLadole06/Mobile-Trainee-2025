@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //Button for the clicking 5. Task Viewpager TabLayout
         val viewPageTAbLayoutBtn: Button =findViewById(R.id.btn5)
         viewPageTAbLayoutBtn.setOnClickListener {
             val intent = Intent(this, TaskViewpagerTabLayout::class.java)
@@ -31,24 +33,35 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, dimen_responsive::class.java)
             startActivity(intent)
         }
-            //Button for the clicking 3. Drawable
-            val drawableCustomBtn: Button = findViewById(R.id.btn3)
-            drawableCustomBtn.setOnClickListener {
-                val intent = Intent(this, DrawableMain::class.java)
-                startActivity(intent)
-            }
-            //Button for the clicking 1. Activity
-            val actLogBtn: Button = findViewById(R.id.btn1)
-            actLogBtn.setOnClickListener {
-                val intent = Intent(this, TaskActivityMain::class.java)
-                startActivity(intent)
-            }
-
-            //Button for the clicking 2. layout
-            val dataPassBtn: Button = findViewById(R.id.btn2)
-            dataPassBtn.setOnClickListener {
-                val intent = Intent(this, TaskLayoutMain::class.java)
-                startActivity(intent)
-            }
+        //Button for the clicking 3. Drawable
+        val drawableCustomBtn: Button = findViewById(R.id.btn3)
+        drawableCustomBtn.setOnClickListener {
+            val intent = Intent(this, DrawableMain::class.java)
+            startActivity(intent)
+        }
+        //Button for the clicking 1. Activity
+        val actLogBtn: Button = findViewById(R.id.btn1)
+        actLogBtn.setOnClickListener {
+            val intent = Intent(this, TaskActivityMain::class.java)
+            startActivity(intent)
+        }
+        //Button for the clicking 2. layout
+        val dataPassBtn: Button = findViewById(R.id.btn2)
+        dataPassBtn.setOnClickListener {
+            val intent = Intent(this, TaskLayoutMain::class.java)
+            startActivity(intent)
+        }
+        //Button for the clicking 7. Task SnackBar Fab
+        val snackbarFabbtn: Button = findViewById(R.id.btn7)
+        snackbarFabbtn.setOnClickListener {
+            val intent = Intent(this, TaskSnackBarFabMain::class.java)
+            startActivity(intent)
+        }
+        //Button for the clicking 8. Fonts
+        val fontBtn: Button = findViewById(R.id.btn8)
+        fontBtn.setOnClickListener {
+            val intent = Intent(this, TaskFontsMain::class.java)
+            startActivity(intent)
         }
     }
+}
