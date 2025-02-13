@@ -13,6 +13,7 @@ import com.example.taskandroid.drawable.DrawableMain
 import com.example.taskandroid.drawable.customdrawable.MakecustomDrawable
 import com.example.taskandroid.tasklayout.TaskLayoutMain
 import com.example.taskandroid.taskactivity.TaskActivityMain
+import com.example.taskandroid.tasksnackbarfab.TaskSnackBarFabMain
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,6 +47,13 @@ class MainActivity : AppCompatActivity() {
             val dataPassBtn: Button = findViewById(R.id.btn2)
             dataPassBtn.setOnClickListener {
                 val intent = Intent(this, TaskLayoutMain::class.java)
+                startActivity(intent)
+            }
+
+            //Button for the clicking 7. Snack Bar
+            val snackBarBtn: Button = findViewById(R.id.btn7)
+            snackBarBtn.setOnClickListener {
+                val intent = Intent(this, TaskSnackBarFabMain::class.java)
                 startActivity(intent)
             }
         }

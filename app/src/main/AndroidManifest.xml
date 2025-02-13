@@ -12,7 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskAndroid"
         tools:targetApi="31">
-      
+        <activity
+            android:name=".tasksnackbarfab.TaskSnackBarFabMain"
+            android:exported="false" />
+        <activity
+            android:name=".tasksnackbarfab.fab.TaskFab"
+            android:exported="false" />
+        <activity
+            android:name=".tasksnackbarfab.snackbar.TaskSnackBar"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,7 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-      
         <activity
             android:name=".taskviewpager_tablayout.TaskViewpagerTabLayout"
             android:exported="false" />
@@ -62,7 +69,6 @@
         <activity
             android:name=".tasklayout.formwithscrolltask.LinearLayOutForm"
             android:exported="false" />
-       
     </application>
 
 </manifest>
