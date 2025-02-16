@@ -12,6 +12,7 @@ import com.example.taskandroid.tasklayout.TaskLayoutMain
 import com.example.taskandroid.taskactivity.TaskActivityMain
 import com.example.taskandroid.tasksnackbarfab.TaskSnackBarFabMain
 import com.example.taskandroid.taskfonts.TaskFontsMain
+import com.example.taskandroid.tc.TaskFragmentsMain
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,9 +69,16 @@ class MainActivity : AppCompatActivity() {
         }
         
         //Button for the clicking 8. Fonts
-        val fontBtn: Button = findViewById(R.id.btn8)
-        fontBtn.setOnClickListener {
+        val FontBtn: Button = findViewById(R.id.btn8)
+        FontBtn.setOnClickListener {
             val intent = Intent(this, TaskFontsMain::class.java)
+            startActivity(intent)
+        }
+
+        //Button for the clicking 10.Fragments
+        val fragBtn: Button = findViewById(R.id.btn10)
+        fragBtn.setOnClickListener {
+            val intent = Intent(this, TaskFragmentsMain::class.java)
             startActivity(intent)
         }
     }

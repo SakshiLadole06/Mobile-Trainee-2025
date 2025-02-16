@@ -55,5 +55,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="8. Fonts"/>
+
+    <Button
+        android:id="@+id/btn10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10. Fragments"/>
 </LinearLayout>
 
