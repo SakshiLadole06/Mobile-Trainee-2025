@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:text="6. AppBar and ToolBar"/>
   
-  <Button
+    <Button
         android:id="@+id/btn7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,7 +55,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="8. Fonts"/>
-
+    
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9. Dialog Box"/>
+  
     <Button
         android:id="@+id/btn10"
         android:layout_width="match_parent"

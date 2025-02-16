@@ -10,6 +10,7 @@ import com.example.taskandroid.drawable.DrawableMain
 import com.example.taskandroid.task_appbar_toolbar.TaskAppbarToolbarMain
 import com.example.taskandroid.tasklayout.TaskLayoutMain
 import com.example.taskandroid.taskactivity.TaskActivityMain
+import com.example.taskandroid.taskdialogs.TaskDialogMain
 import com.example.taskandroid.tasksnackbarfab.TaskSnackBarFabMain
 import com.example.taskandroid.taskfonts.TaskFontsMain
 import com.example.taskandroid.tc.TaskFragmentsMain
@@ -46,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, dimen_responsive::class.java)
             startActivity(intent)
         }
-
+        
         //Button for the clicking 5. ViewPager and TabLayout
         val viewPageTAbLayoutBtn: Button =findViewById(R.id.btn5)
         viewPageTAbLayoutBtn.setOnClickListener {
@@ -72,6 +73,13 @@ class MainActivity : AppCompatActivity() {
         val FontBtn: Button = findViewById(R.id.btn8)
         FontBtn.setOnClickListener {
             val intent = Intent(this, TaskFontsMain::class.java)
+            startActivity(intent)
+        }
+        
+        //Button for the clicking 9.Task Dialog
+        val dialogBoxBtn: Button = findViewById(R.id.btn9)
+        dialogBoxBtn.setOnClickListener {
+            val intent = Intent(this, TaskDialogMain::class.java)
             startActivity(intent)
         }
 
