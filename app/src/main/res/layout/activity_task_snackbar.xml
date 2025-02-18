@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:orientation="vertical"
+    tools:context=".tasksnackbarfab.snackbar.TaskSnackBar">
+
+    <Button
+        android:id="@+id/btnForSnakeBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Snake Bar"/>
+
+    <Button
+        android:id="@+id/btnForSnakeBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action Snake Bar"/>
+
+    <Button
+        android:id="@+id/btnForSnakeBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toast Snake Bar"/>
+
+    <Button
+        android:id="@+id/btnForSnakeBar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animation Up Snake Bar"/>
+
+    <Button
+        android:id="@+id/btnForSnakeBar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animation Fade Snake Bar"/>
+
+    <Button
+        android:id="@+id/btnForSnakeBar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anchor view Snake Bar"/>
+</LinearLayout>

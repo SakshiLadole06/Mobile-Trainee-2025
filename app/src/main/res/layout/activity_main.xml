@@ -20,6 +20,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="2. Layouts"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Drawables"/>
 
     <Button
         android:id="@+id/btn3"
@@ -32,5 +37,40 @@
         android:layout_height="wrap_content"
         android:text="4. Dimens for responsive design"/>
 
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. ViewPager and TabLayout"/>
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6. AppBar and ToolBar"/>
+  
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7. SnackBar and Floating Action Button"/>
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8. Fonts"/>
+    
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9. Dialog Box"/>
+  
+    <Button
+        android:id="@+id/btn10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10. Fragments"/>
 </LinearLayout>
 
