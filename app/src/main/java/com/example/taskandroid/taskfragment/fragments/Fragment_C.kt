@@ -35,7 +35,7 @@ class Fragment_C : Fragment() {
             textForFragC.text = bundle.getString("text")?.uppercase()
         }
 
-        // Listen for modified text from FragmentB
+        //modified text from FragmentB
         setFragmentResultListener("modifiedTextForC") { requestKey, bundle ->
             textForFragC.text = bundle.getString("text")?.uppercase()
         }
@@ -48,7 +48,7 @@ class Fragment_C : Fragment() {
             setFragmentResult("resetDataC", bundleOf())
         }
 
-        // Listen for reset request from FragmentC
+        //reset request from FragmentC
         setFragmentResultListener("resetDataC") { requestKey, bundle ->
             textForFragC.text = ""
         }

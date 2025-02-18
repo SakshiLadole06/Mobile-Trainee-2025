@@ -46,7 +46,7 @@ class Fragment_B : Fragment() {
             setFragmentResult("modifiedTextForC", bundleOf("text" to modifiedText))
         }
 
-        // Listen for reset request from FragmentC
+        // reset request from FragmentC
         setFragmentResultListener("resetDataB") { requestKey, bundle ->
             textForFragB.text = ""
         }
