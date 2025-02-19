@@ -67,5 +67,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="10. Fragments"/>
+
+    <Button
+        android:id="@+id/btn11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="11. Recycle View"/>
 </LinearLayout>
 
