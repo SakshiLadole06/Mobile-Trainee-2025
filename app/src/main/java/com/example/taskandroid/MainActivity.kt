@@ -13,6 +13,7 @@ import com.example.taskandroid.taskactivity.TaskActivityMain
 import com.example.taskandroid.taskdialogs.TaskDialogMain
 import com.example.taskandroid.tasksnackbarfab.TaskSnackBarFabMain
 import com.example.taskandroid.taskfonts.TaskFontsMain
+import com.example.taskandroid.taskrecycleview.TaskRecycleViewMain
 import com.example.taskandroid.tc.TaskFragmentsMain
 
 class MainActivity : AppCompatActivity() {
@@ -87,6 +88,13 @@ class MainActivity : AppCompatActivity() {
         val fragBtn: Button = findViewById(R.id.btn10)
         fragBtn.setOnClickListener {
             val intent = Intent(this, TaskFragmentsMain::class.java)
+            startActivity(intent)
+        }
+
+        //Button for the clicking 11. RecycleView
+        val recycleViewBtn: Button = findViewById(R.id.btn11)
+        recycleViewBtn.setOnClickListener {
+            val intent = Intent(this, TaskRecycleViewMain::class.java)
             startActivity(intent)
         }
     }
