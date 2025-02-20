@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +15,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskAndroid"
         tools:targetApi="31">
+
+        <activity
+            android:name=".taskintentfilter.TaskIntentFilterMain"
+            android:exported="true"
+            android:label="IntentsandIntentsFilter"
+            android:launchMode="singleTop">
+            <!--    intent filter for the photos-->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/jpg"/>
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".taskrecycleview.TaskRecycleViewMain"
             android:exported="false" />
@@ -84,6 +102,13 @@
         <activity
             android:name=".tasklayout.formwithscrolltask.LinearLayOutForm"
             android:exported="false" />
+
     </application>
 
+    <!--    <queries>-->
+    <!--        <intent>-->
+    <!--            <action android:name="android.intent.action.SENDTO"/>-->
+    <!--            <data android:mimeType="text/plain"/>-->
+    <!--        </intent>-->
+    <!--    </queries>-->
 </manifest>

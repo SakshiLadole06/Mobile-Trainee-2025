@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="12dp"
+    tools:context=".taskintentfilter.TaskIntentFilterMain">
+
+    <Button
+        android:id="@+id/callBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call"/>
+
+    <Button
+        android:id="@+id/emailBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"/>
+
+    <Button
+        android:id="@+id/linkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Link"/>
+
+    <Button
+        android:id="@+id/photosBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photos"/>
+
+    <Button
+        android:id="@+id/audioBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio"/>
+
+    <ImageView
+        android:id="@+id/imageViewInIntent"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/textInIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</LinearLayout>
