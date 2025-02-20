@@ -78,5 +78,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="11. Recycle View"/>
+
+    <Button
+        android:id="@+id/btn12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12. Intent Filter"/>
 </LinearLayout>
 
