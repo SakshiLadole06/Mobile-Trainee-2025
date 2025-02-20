@@ -41,8 +41,11 @@ class TaskIntentFilterMain : AppCompatActivity() {
 
         //For email Open
         emailBtn.setOnClickListener {
-            val url ="mailto:ladolesakshi@gmail.com"
-            val emailIntent = Intent(Intent.ACTION_SENDTO,Uri.parse(url))
+            val url ="mailto:"
+            var emailIntent = Intent(Intent.ACTION_SENDTO,Uri.parse(url))
+            emailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("abc@email.com"))
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Email Subject")
+            emailIntent.putExtra(Intent.EXTRA_TEXT,"Email Text")
             startActivity(emailIntent)
         }
 
