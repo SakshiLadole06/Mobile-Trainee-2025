@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+  
+<!--Pemission for the Runtime permission task-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+<!--   this is for intent and image is for both -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -30,6 +38,9 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".task_runtime_permissions.TaskRuntimePermissionMain"
+            android:exported="false" />
         <activity
             android:name=".taskrecycleview.TaskRecycleViewMain"
             android:exported="false" />

@@ -8,6 +8,7 @@ import com.example.taskandroid.taskviewpager_tablayout.TaskViewpagerTabLayout
 import com.example.taskandroid.dimenResponse.dimen_responsive
 import com.example.taskandroid.drawable.DrawableMain
 import com.example.taskandroid.task_appbar_toolbar.TaskAppbarToolbarMain
+import com.example.taskandroid.task_runtime_permissions.TaskRuntimePermissionMain
 import com.example.taskandroid.tasklayout.TaskLayoutMain
 import com.example.taskandroid.taskactivity.TaskActivityMain
 import com.example.taskandroid.taskdialogs.TaskDialogMain
@@ -98,11 +99,18 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, TaskRecycleViewMain::class.java)
             startActivity(intent)
         }
-
+        
         //Button for the clicking 12. intent Filter
         val intentFilterBtn: Button = findViewById(R.id.btn12)
         intentFilterBtn.setOnClickListener {
             val intent = Intent(this, TaskIntentFilterMain::class.java)
+            startActivity(intent)
+        }
+        
+        //Button for the clicking 13. Runtime Permission
+        val runtimePermissionBtn: Button = findViewById(R.id.btn13)
+        runtimePermissionBtn.setOnClickListener {
+            val intent = Intent(this, TaskRuntimePermissionMain::class.java)
             startActivity(intent)
         }
     }
