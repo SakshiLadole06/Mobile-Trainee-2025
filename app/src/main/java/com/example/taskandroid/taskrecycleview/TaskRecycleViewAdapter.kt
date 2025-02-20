@@ -13,7 +13,6 @@ import com.example.taskandroid.R
 class TaskRecycleViewAdapter(val chatList: MutableList<DataClassRecycleView>, private var optionsMenuClickListener: OptionsMenuClickListener)  //extends by defalut : RecyclerView.Adapter
     : RecyclerView.Adapter<TaskRecycleViewAdapter.TaskRecycleViewHolder>(){
     lateinit var context:Context
-    private lateinit var msgCardView: CardView
 
     //inner class for TaskRecyclerView Adapter
     class TaskRecycleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)  {

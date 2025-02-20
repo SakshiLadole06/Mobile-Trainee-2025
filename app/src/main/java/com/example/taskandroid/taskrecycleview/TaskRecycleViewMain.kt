@@ -50,6 +50,7 @@ class TaskRecycleViewMain : AppCompatActivity() {
             editTextForRecycleView.text.clear()
         }
     }
+
     //Implement the performOptionsMenuClick()
     private fun performOptionsMenuClick(position: Int,view:View) {
         val popupMenu = PopupMenu(this,view)
@@ -76,6 +77,7 @@ class TaskRecycleViewMain : AppCompatActivity() {
                         true
                     }
                 }
+                popupMenu.dismiss()
                 return false
             }
         })
