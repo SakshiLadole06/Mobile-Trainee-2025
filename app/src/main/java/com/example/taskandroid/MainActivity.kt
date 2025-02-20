@@ -14,6 +14,7 @@ import com.example.taskandroid.taskactivity.TaskActivityMain
 import com.example.taskandroid.taskdialogs.TaskDialogMain
 import com.example.taskandroid.tasksnackbarfab.TaskSnackBarFabMain
 import com.example.taskandroid.taskfonts.TaskFontsMain
+import com.example.taskandroid.taskintentfilter.TaskIntentFilterMain
 import com.example.taskandroid.taskrecycleview.TaskRecycleViewMain
 import com.example.taskandroid.tc.TaskFragmentsMain
 
@@ -98,7 +99,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, TaskRecycleViewMain::class.java)
             startActivity(intent)
         }
-
+        
+        //Button for the clicking 12. intent Filter
+        val intentFilterBtn: Button = findViewById(R.id.btn12)
+        intentFilterBtn.setOnClickListener {
+            val intent = Intent(this, TaskIntentFilterMain::class.java)
+            startActivity(intent)
+        }
+        
         //Button for the clicking 13. Runtime Permission
         val runtimePermissionBtn: Button = findViewById(R.id.btn13)
         runtimePermissionBtn.setOnClickListener {
