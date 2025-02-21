@@ -95,7 +95,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="14. Shared Preference"/>
-    </LinearLayout>
 
+        <Button
+            android:id="@+id/btn15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15. Web View"/>
+    </LinearLayout>
 </ScrollView>
 
