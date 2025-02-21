@@ -17,6 +17,7 @@ import com.example.taskandroid.taskfonts.TaskFontsMain
 import com.example.taskandroid.taskintentfilter.TaskIntentFilterMain
 import com.example.taskandroid.taskrecycleview.TaskRecycleViewMain
 import com.example.taskandroid.tasksharedpreferences.LoginPageSharedPreference
+import com.example.taskandroid.taskwebview.TaskWebViewMain
 import com.example.taskandroid.tc.TaskFragmentsMain
 
 class MainActivity : AppCompatActivity() {
@@ -119,6 +120,13 @@ class MainActivity : AppCompatActivity() {
         val sharedPreferenceBtn: Button = findViewById(R.id.btn14)
         sharedPreferenceBtn.setOnClickListener {
             val intent = Intent(this, LoginPageSharedPreference::class.java)
+            startActivity(intent)
+        }
+
+        //Button for the clicking 15. Web View
+        val webViewBtn: Button = findViewById(R.id.btn15)
+        webViewBtn.setOnClickListener {
+            val intent = Intent(this, TaskWebViewMain::class.java)
             startActivity(intent)
         }
     }
