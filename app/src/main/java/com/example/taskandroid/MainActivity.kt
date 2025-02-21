@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //Button for the clicking 13. Runtime Permission
+        //Button for the clicking 14. Shared Preference
         val sharedPreferenceBtn: Button = findViewById(R.id.btn14)
         sharedPreferenceBtn.setOnClickListener {
             val intent = Intent(this, LoginPageSharedPreference::class.java)
