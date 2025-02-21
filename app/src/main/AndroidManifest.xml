@@ -72,6 +72,9 @@
             android:name=".taskdialogs.TaskDialogMain"
             android:exported="false" />
         <activity
+            android:name=".task_appbar_toolbar.CollapsingToolBar"
+            android:exported="false"/>
+        <activity
             android:name=".task_appbar_toolbar.TaskAppbarToolbarMain"
             android:exported="false" />
         <activity
