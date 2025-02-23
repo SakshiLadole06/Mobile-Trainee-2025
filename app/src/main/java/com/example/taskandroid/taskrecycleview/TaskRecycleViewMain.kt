@@ -43,42 +43,97 @@ class TaskRecycleViewMain : AppCompatActivity() {
         recycleView.adapter= chatAdapter
 
         //When click on Send Button
-        sendMsgBtn.setOnClickListener{
-            val message = editTextForRecycleView.text.toString().trim()
-            val time = LocalTime.now().toString()
-            chatAdapter.addName(message,time,checkBoxForRecycleView.isChecked)
-            editTextForRecycleView.text.clear()
+        sendMsgBtn.setOnClickListener {
+            val newText = editTextForRecycleView.text.toString().trim()
+            if (newText.isNotEmpty()) {
+                if (isEditing) {
+                    // Update the existing message
+                    chatList[editingPosition] = DataClassRecycleView(
+                        newText,
+                        LocalTime.now().toString(),
+                        checkBoxForRecycleView.isChecked
+                    )
+                    chatAdapter.notifyItemChanged(editingPosition)
+
+                    // Reset editing mode
+                    isEditing = false
+                    editingPosition = -1
+                } else {
+                    // Add a new message
+                    chatList.add(
+                        DataClassRecycleView(
+                            newText,
+                            LocalTime.now().toString(),
+                            checkBoxForRecycleView.isChecked
+                        )
+                    )
+                    chatAdapter.notifyItemInserted(chatList.size - 1)
+                }
+
+                // Clear input field after sending
+                editTextForRecycleView.text.clear()
+            }
         }
+
     }
     //Implement the performOptionsMenuClick()
-    private fun performOptionsMenuClick(position: Int,view:View) {
-        val popupMenu = PopupMenu(this,view)
+//    private fun performOptionsMenuClick(position: Int,view:View) {
+//        val popupMenu = PopupMenu(this,view)
+//        popupMenu.inflate(R.menu.menu_recycleview)
+//        popupMenu.setOnMenuItemClickListener(object : PopupMenu.OnMenuItemClickListener{
+//            override fun onMenuItemClick(item: MenuItem?): Boolean {
+//                when(item?.itemId){
+//                    R.id.action_delete -> {
+//                        chatList.remove(chatList[position])
+//                        chatAdapter.notifyDataSetChanged()
+//                        return true
+//                    }
+//                    R.id.action_edit -> {
+//                        editTextForRecycleView.setText(chatList[position].message)
+//                        sendMsgBtn.setOnClickListener {
+//                            chatList[position] = DataClassRecycleView(
+//                                editTextForRecycleView.text.toString().trim(),
+//                                LocalTime.now().toString(),
+//                                checkBoxForRecycleView.isChecked
+//                            )
+//                            chatAdapter.notifyItemChanged(position)
+//                            editTextForRecycleView.text.clear()
+//                        }
+//                        return true
+//                    }
+//                }
+//                return false
+//            }
+//        })
+//        popupMenu.show()
+//    }
+    // Variables to track editing mode
+    private var isEditing = false
+    private var editingPosition = -1
+
+    private fun performOptionsMenuClick(position: Int, view: View) {
+        val popupMenu = PopupMenu(this, view)
         popupMenu.inflate(R.menu.menu_recycleview)
-        popupMenu.setOnMenuItemClickListener(object : PopupMenu.OnMenuItemClickListener{
-            override fun onMenuItemClick(item: MenuItem?): Boolean {
-                when(item?.itemId){
-                    R.id.action_delete -> {
-                        chatList.remove(chatList[position])
-                        chatAdapter.notifyDataSetChanged()
-                        return true
-                    }
-                    R.id.action_edit -> {
-                        editTextForRecycleView.setText(chatList[position].message)
-                        sendMsgBtn.setOnClickListener {
-                            chatList[position] = DataClassRecycleView(
-                                editTextForRecycleView.text.toString().trim(),
-                                LocalTime.now().toString(),
-                                checkBoxForRecycleView.isChecked
-                            )
-                            chatAdapter.notifyItemChanged(position)
-                            editTextForRecycleView.text.clear()
-                        }
-                        true
-                    }
+        popupMenu.setOnMenuItemClickListener { item ->
+            when (item.itemId) {
+                R.id.action_delete -> {
+                    chatList.removeAt(position)
+                    chatAdapter.notifyItemRemoved(position)
+                    true
                 }
-                return false
+                R.id.action_edit -> {
+                    // Set text in input field for editing
+                    editTextForRecycleView.setText(chatList[position].message)
+
+                    // Enable editing mode
+                    isEditing = true
+                    editingPosition = position
+
+                    true
+                }
+                else -> false
             }
-        })
+        }
         popupMenu.show()
     }
 }
