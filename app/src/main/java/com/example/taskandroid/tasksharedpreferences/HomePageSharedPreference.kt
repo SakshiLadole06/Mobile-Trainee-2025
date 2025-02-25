@@ -25,6 +25,8 @@ class HomePageSharedPreference : AppCompatActivity() {
         val shrPreEditTask = shrPreTask.edit() //its editor
 
         // get username
+        //contains(String key): This method is used to check whether the preferences contain a preference.
+        //instead of this we can use this method
         val username = shrPreTask.getString("nameUser", "User")
         // Display greeting message
         showNameShrPre.text = "Welcome, $username! 🎉"
