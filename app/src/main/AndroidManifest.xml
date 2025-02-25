@@ -11,9 +11,16 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
+    <!-- Permission for the WebView Task also for retrofit task internet permission-->
+    <uses-permission android:name="android.permission.INTERNET" />
 
-<!--    Permission for the WebView Task-->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+
+            <data android:mimeType="text/plain" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
@@ -25,6 +32,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskAndroid"
         tools:targetApi="31">
+        <activity
+            android:name=".taskretrofit.TaskRetrofitMain"
+            android:exported="false" />
         <activity
             android:name=".taskwebview.TaskWebViewMain"
             android:exported="false" />
@@ -73,7 +83,7 @@
             android:exported="false" />
         <activity
             android:name=".task_appbar_toolbar.CollapsingToolBar"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".task_appbar_toolbar.TaskAppbarToolbarMain"
             android:exported="false" />
@@ -129,12 +139,5 @@
             android:name=".tasklayout.formwithscrolltask.LinearLayOutForm"
             android:exported="false" />
     </application>
-
-    <queries>
-        <intent>
-            <action android:name="android.intent.action.SENDTO"/>
-            <data android:mimeType="text/plain"/>
-        </intent>
-    </queries>
 
 </manifest>
