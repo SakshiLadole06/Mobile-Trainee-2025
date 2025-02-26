@@ -10,8 +10,7 @@
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="false" />
-    <!-- Permission for the WebView Task also for retrofit task internet permission-->
+        android:required="false" /> <!-- Permission for the WebView Task also for retrofit task internet permission -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <queries>
@@ -32,6 +31,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskAndroid"
         tools:targetApi="31">
+        <activity
+            android:name=".taskroomdatabase.TaskRoomDatabaseMain"
+            android:exported="false" />
         <activity
             android:name=".taskretrofit.TaskRetrofitMain"
             android:exported="false" />
