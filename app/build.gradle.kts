@@ -62,4 +62,6 @@ dependencies {
     //map
     implementation(libs.play.services.maps)
     implementation(libs.play.services.location)
+    //for notification
+    implementation("androidx.core:core-ktx:1.15.0")
 }
