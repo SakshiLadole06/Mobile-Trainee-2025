@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.taskandroid.taskviewpager_tablayout.TaskViewpagerTabLayout
 import com.example.taskandroid.dimenResponse.dimen_responsive
 import com.example.taskandroid.drawable.DrawableMain
+import com.example.taskandroid.task_notification_fcm.TaskNotificationFCMMain
 import com.example.taskandroid.task_appbar_toolbar.TaskAppbarToolbarMain
 import com.example.taskandroid.task_runtime_permissions.TaskRuntimePermissionMain
 import com.example.taskandroid.tasklayout.TaskLayoutMain
@@ -143,6 +144,13 @@ class MainActivity : AppCompatActivity() {
         val roomDatabaseBtn: Button = findViewById(R.id.btn17)
         roomDatabaseBtn.setOnClickListener {
             val intent = Intent(this, TaskRoomDatabaseMain::class.java)
+            startActivity(intent)
+        }
+
+        //Button for the clicking 18. Notification/FCM
+        val notificationFCMBtn: Button = findViewById(R.id.btn18)
+        notificationFCMBtn.setOnClickListener {
+            val intent = Intent(this, TaskNotificationFCMMain::class.java)
             startActivity(intent)
         }
     }
