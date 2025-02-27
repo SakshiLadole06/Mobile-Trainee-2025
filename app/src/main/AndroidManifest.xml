@@ -4,22 +4,28 @@
     <!-- Pemission for the Runtime permission task -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.CAMERA" /> <!-- this is for intent and image is for both -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- this is for intent and location task both -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
-
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" /> <!-- Permission for the WebView Task also for retrofit task internet permission -->
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <queries>
         <intent>
             <action android:name="android.intent.action.SENDTO" />
-
             <data android:mimeType="text/plain" />
         </intent>
     </queries>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- Permission for the WebView Task also for retrofit task internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--  Permission for the Notification-->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -31,6 +37,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskAndroid"
         tools:targetApi="31">
+        <activity
+            android:name=".task_notification_fcm.TaskNotificationFCMMain"
+            android:exported="false" />
+        <!--    Service for FCM msg-->
+        <service
+            android:name=".task_notification_fcm.FCMService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".task_notification_fcm.NotificationReceiver"/>
+
         <activity
             android:name=".taskroomdatabase.TaskRoomDatabaseMain"
             android:exported="false" />
@@ -51,13 +71,10 @@
             android:exported="true"
             android:label="IntentsandIntentsFilter"
             android:launchMode="singleTop">
-
             <!-- intent filter for the photos -->
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
-
                 <category android:name="android.intent.category.DEFAULT" />
-
                 <data android:mimeType="image/jpg" />
                 <data android:mimeType="audio/*" />
             </intent-filter>
