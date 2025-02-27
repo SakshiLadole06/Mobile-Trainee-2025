@@ -16,6 +16,7 @@ import com.example.taskandroid.taskdialogs.TaskDialogMain
 import com.example.taskandroid.tasksnackbarfab.TaskSnackBarFabMain
 import com.example.taskandroid.taskfonts.TaskFontsMain
 import com.example.taskandroid.taskintentfilter.TaskIntentFilterMain
+import com.example.taskandroid.taskmap.TaskMapMain
 import com.example.taskandroid.taskrecycleview.TaskRecycleViewMain
 import com.example.taskandroid.taskretrofit.TaskRetrofitMain
 import com.example.taskandroid.taskroomdatabase.TaskRoomDatabaseMain
@@ -146,11 +147,18 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, TaskRoomDatabaseMain::class.java)
             startActivity(intent)
         }
-
+            
         //Button for the clicking 18. Notification/FCM
         val notificationFCMBtn: Button = findViewById(R.id.btn18)
         notificationFCMBtn.setOnClickListener {
             val intent = Intent(this, TaskNotificationFCMMain::class.java)
+            startActivity(intent)
+        }
+        
+        //Button for the clicking 19. Map
+        val mapBtn: Button = findViewById(R.id.btn19)
+        mapBtn.setOnClickListener {
+            val intent = Intent(this, TaskMapMain::class.java)
             startActivity(intent)
         }
     }

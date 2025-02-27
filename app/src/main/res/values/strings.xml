@@ -24,4 +24,6 @@
     <string name="c2">Awesome</string>
     <string name="c3">I couldn\'t put it down.</string>
     <string name="c4">A must-read</string>
+    //Map api key
+    <string name="YOUR_API_KEY">AIzaSyBx_3A7SVSUybIFXziv6-SLS3sQfS5-bPw</string>
 </resources>
