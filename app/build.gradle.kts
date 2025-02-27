@@ -44,11 +44,13 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.fragment.ktx)
+    //for web view
     implementation(libs.androidx.webkit)
     implementation(libs.firebase.messaging)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    //for view pager
     implementation(libs.androidx.viewpager2)
     //for retrofit
     implementation("com.squareup.retrofit2:retrofit:2.3.0")
@@ -57,4 +59,7 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
+    //map
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
 }

@@ -32,6 +32,19 @@
         android:theme="@style/Theme.TaskAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".taskmap.MarkerMap"
+            android:exported="false" />
+        <activity
+            android:name=".taskmap.NormalMap"
+            android:exported="false" />
+        <activity
+            android:name=".taskmap.TaskMapMain"
+            android:exported="false" />
+        <!--for map-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/YOUR_API_KEY" />
+        <activity
             android:name=".taskroomdatabase.TaskRoomDatabaseMain"
             android:exported="false" />
         <activity
