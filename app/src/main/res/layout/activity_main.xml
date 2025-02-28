@@ -120,12 +120,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="18. Notification/FCM"/>
-      
+
        <Button
             android:id="@+id/btn19"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="19. Map"/>
+
+        <Button
+            android:id="@+id/btn20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20. Thread"/>
     </LinearLayout>
 </ScrollView>
 

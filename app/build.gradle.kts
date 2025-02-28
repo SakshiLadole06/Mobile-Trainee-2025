@@ -64,4 +64,8 @@ dependencies {
     implementation(libs.play.services.location)
     //for notification
     implementation("androidx.core:core-ktx:1.15.0")
+    //for cardview
+    implementation("androidx.cardview:cardview:1.0.0")
+    //for Coroutine
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
 }

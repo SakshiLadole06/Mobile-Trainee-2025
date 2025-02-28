@@ -21,6 +21,7 @@ import com.example.taskandroid.taskrecycleview.TaskRecycleViewMain
 import com.example.taskandroid.taskretrofit.TaskRetrofitMain
 import com.example.taskandroid.taskroomdatabase.TaskRoomDatabaseMain
 import com.example.taskandroid.tasksharedpreferences.LoginPageSharedPreference
+import com.example.taskandroid.taskthread.TaskThreadMain
 import com.example.taskandroid.taskwebview.TaskWebViewMain
 import com.example.taskandroid.tc.TaskFragmentsMain
 
@@ -159,6 +160,13 @@ class MainActivity : AppCompatActivity() {
         val mapBtn: Button = findViewById(R.id.btn19)
         mapBtn.setOnClickListener {
             val intent = Intent(this, TaskMapMain::class.java)
+            startActivity(intent)
+        }
+
+        //Button for the clicking 20. Multithreading
+        val threadBtn: Button = findViewById(R.id.btn20)
+        threadBtn.setOnClickListener {
+            val intent = Intent(this, TaskThreadMain::class.java)
             startActivity(intent)
         }
     }
