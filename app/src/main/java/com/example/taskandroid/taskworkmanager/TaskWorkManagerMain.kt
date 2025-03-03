@@ -25,10 +25,12 @@ class TaskWorkManagerMain : AppCompatActivity() {
         tv=findViewById(R.id.tvWork)
 
         OneTimeWork.setOnClickListener{
+            tv.text = ""
             OneTimeWorkFun()
         }
 
         PeriodicTimeWork.setOnClickListener{
+            tv.text = ""
             ConstraintsWorkFun()
         }
     }
@@ -41,9 +43,10 @@ class TaskWorkManagerMain : AppCompatActivity() {
         // Observe the work status
         WorkManager.getInstance(this).getWorkInfoByIdLiveData(myWorkRequest.id)
             .observe(this, Observer { workInfo ->
-                if (workInfo != null && workInfo.state.isFinished) {
-                    tv.text = "Work Completed"
-                }
+                tv.text=workInfo?.state.toString()
+//                if (workInfo != null && workInfo.state.isFinished) {
+//                    tv.text = "Work Completed"
+//                }one of the way
             })
     }
 
@@ -60,12 +63,7 @@ class TaskWorkManagerMain : AppCompatActivity() {
         // Observe the work status
         WorkManager.getInstance(this).getWorkInfoByIdLiveData(myWorkRequest.id)
             .observe(this, Observer { workInfo ->
-                if (workInfo != null && workInfo.state.isFinished) {
-                    tv.text = "Constraints Work Completed"
-                }
-                else{
-                    tv.text = "Constraints Not Matched, Check Your Internet and Charging Port"
-                }
+                    tv.text = workInfo?.state.toString()
             })
     }
 }
