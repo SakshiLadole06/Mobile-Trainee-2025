@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="12dp"
+    android:gravity="center"
+    tools:context=".taskworkmanager.TaskWorkManagerMain">
+    <TextView
+        android:id="@+id/tvWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Result Status"/>
+    <Button
+        android:id="@+id/OneTimeWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="One Time Work"/>
+
+    <Button
+        android:id="@+id/PeriodicTimeWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Periodic Time Work"/>
+
+</LinearLayout>

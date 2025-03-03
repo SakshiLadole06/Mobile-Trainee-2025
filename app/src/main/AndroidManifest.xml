@@ -35,6 +35,9 @@
         android:theme="@style/Theme.TaskAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".taskworkmanager.TaskWorkManagerMain"
+            android:exported="false" />
+        <activity
             android:name=".taskthread.TaskThreadMain"
             android:exported="false" />
         <activity

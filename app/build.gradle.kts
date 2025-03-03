@@ -47,6 +47,7 @@ dependencies {
     //for web view
     implementation(libs.androidx.webkit)
     implementation(libs.firebase.messaging)
+    implementation(libs.androidx.work.runtime.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -68,4 +69,6 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0")
     //for Coroutine
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    //or workers
+    implementation(libs.androidx.work.runtime.ktx)
 }
