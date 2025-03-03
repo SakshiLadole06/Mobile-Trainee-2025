@@ -63,6 +63,9 @@ class TaskWorkManagerMain : AppCompatActivity() {
                 if (workInfo != null && workInfo.state.isFinished) {
                     tv.text = "Constraints Work Completed"
                 }
+                else{
+                    tv.text = "Constraints Not Matched, Check Your Internet and Charging Port"
+                }
             })
     }
 }
