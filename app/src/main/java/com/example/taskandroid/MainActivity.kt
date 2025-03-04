@@ -9,6 +9,7 @@ import com.example.taskandroid.dimenResponse.dimen_responsive
 import com.example.taskandroid.drawable.DrawableMain
 import com.example.taskandroid.task_notification_fcm.TaskNotificationFCMMain
 import com.example.taskandroid.task_appbar_toolbar.TaskAppbarToolbarMain
+import com.example.taskandroid.task_coil_glide_darktheme.TaskCoilGlideDarkThemeMain
 import com.example.taskandroid.task_di.TaskDIMain
 import com.example.taskandroid.task_runtime_permissions.TaskRuntimePermissionMain
 import com.example.taskandroid.tasklayout.TaskLayoutMain
@@ -183,6 +184,13 @@ class MainActivity : AppCompatActivity() {
         val diBtn: Button = findViewById(R.id.btn22)
         diBtn.setOnClickListener {
             val intent = Intent(this, TaskDIMain::class.java)
+            startActivity(intent)
+        }
+
+        //Button for the clicking 23. Coil, Glide and Dark Theme
+        val cgdtBtn: Button = findViewById(R.id.btn23)
+        cgdtBtn.setOnClickListener {
+            val intent = Intent(this, TaskCoilGlideDarkThemeMain::class.java)
             startActivity(intent)
         }
     }

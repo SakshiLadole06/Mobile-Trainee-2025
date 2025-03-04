@@ -45,13 +45,15 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.fragment.ktx)
-    //for web view
-    implementation(libs.androidx.webkit)
-    implementation(libs.firebase.messaging)
-    implementation(libs.androidx.work.runtime.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    //for web view
+    implementation(libs.androidx.webkit)
+    //for firebase messaging
+    implementation(libs.firebase.messaging)
+    //for work
+    implementation(libs.androidx.work.runtime.ktx)
     //for view pager
     implementation(libs.androidx.viewpager2)
     //for retrofit
@@ -75,6 +77,11 @@ dependencies {
     //for DI
     implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+    //for Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    //for coil
+    implementation("io.coil-kt.coil3:coil:3.1.0")
+    implementation("io.coil-kt.coil3:coil-network-okhttp:3.1.0")
 }
 // Allow references to generated code for DI
 kapt {

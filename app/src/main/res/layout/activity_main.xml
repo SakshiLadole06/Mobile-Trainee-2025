@@ -144,6 +144,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="22. Dependency Injection"/>
+
+       <Button
+            android:id="@+id/btn23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="23. Coil, Glide and Dark Theme"/>
     </LinearLayout>
 </ScrollView>
 
