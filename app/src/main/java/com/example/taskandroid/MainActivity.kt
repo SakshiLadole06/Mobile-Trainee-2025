@@ -9,6 +9,7 @@ import com.example.taskandroid.dimenResponse.dimen_responsive
 import com.example.taskandroid.drawable.DrawableMain
 import com.example.taskandroid.task_notification_fcm.TaskNotificationFCMMain
 import com.example.taskandroid.task_appbar_toolbar.TaskAppbarToolbarMain
+import com.example.taskandroid.task_di.TaskDIMain
 import com.example.taskandroid.task_runtime_permissions.TaskRuntimePermissionMain
 import com.example.taskandroid.tasklayout.TaskLayoutMain
 import com.example.taskandroid.taskactivity.TaskActivityMain
@@ -175,6 +176,13 @@ class MainActivity : AppCompatActivity() {
         val workBtn: Button = findViewById(R.id.btn21)
         workBtn.setOnClickListener {
             val intent = Intent(this, TaskWorkManagerMain::class.java)
+            startActivity(intent)
+        }
+
+        //Button for the clicking 22. Dependency Injection
+        val diBtn: Button = findViewById(R.id.btn22)
+        diBtn.setOnClickListener {
+            val intent = Intent(this, TaskDIMain::class.java)
             startActivity(intent)
         }
     }
