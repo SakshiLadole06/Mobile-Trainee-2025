@@ -14,8 +14,10 @@ class FCMService:FirebaseMessagingService(){
     private val context=this
     override fun onMessageReceived(message: RemoteMessage){
         super.onMessageReceived(message)
-        showNotification(message.notification?.title,message.notification?.body)
-        showBigPictureNotification(message.notification?.title,message.notification?.body,message.notification?.imageUrl)
+            if(message.notification?.imageUrl==null)
+                showNotification(message.notification?.title,message.notification?.body)
+            else
+                showBigPictureNotification(message.notification?.title,message.notification?.body,message.notification?.imageUrl)
     }
 
     private fun showNotification(title: String?, msgBody: String?){

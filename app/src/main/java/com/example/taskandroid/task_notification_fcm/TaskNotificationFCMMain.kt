@@ -23,12 +23,6 @@ class TaskNotificationFCMMain : AppCompatActivity() {
     //permission for notification
     val permissionArr = arrayOf(android.Manifest.permission.POST_NOTIFICATIONS)
 
-    //for alram manager
-    private var alarmMgr: AlarmManager? = null
-    private lateinit var alarmIntent: PendingIntent
-
-    val context = this
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_task_notification_fcm_main)
@@ -53,18 +47,9 @@ class TaskNotificationFCMMain : AppCompatActivity() {
 
         //Schedule Notification
         scheduleNoti.setOnClickListener {
-            val trgrTime = System.currentTimeMillis() + 3 * 1000
-            Toast.makeText(this, "Schedule Notification Sent", Toast.LENGTH_SHORT).show()
-            scheduleNotification(trgrTime)
+            Toast.makeText(this, "Scheduled Notification Sent", Toast.LENGTH_SHORT).show()
+            NotificationReceiver().scheduleNotification(this)  // Schedule the notification
         }
-    }
-
-    private fun scheduleNotification(trgrTime: Long) {
-        alarmMgr = this.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        alarmIntent = Intent(context, NotificationReceiver::class.java).let { intent ->
-            PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_IMMUTABLE)
-        }
-        alarmMgr!!.set(AlarmManager.RTC_WAKEUP, trgrTime, alarmIntent)
     }
 }
 
