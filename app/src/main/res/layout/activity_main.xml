@@ -127,17 +127,23 @@
             android:layout_height="wrap_content"
             android:text="19. Map"/>
 
-        <Button
+       <Button
             android:id="@+id/btn20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="20. Thread"/>
 
-        <Button
+       <Button
             android:id="@+id/btn21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="21. Work Manager"/>
+
+       <Button
+            android:id="@+id/btn22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22. Dependency Injection"/>
     </LinearLayout>
 </ScrollView>
 

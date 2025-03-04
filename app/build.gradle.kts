@@ -1,8 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")
-    alias(libs.plugins.google.gms.google.services) // Add this for Room annotation processor
+    id("kotlin-kapt")// Add this for Room annotation processor
+    alias(libs.plugins.google.gms.google.services)
+    id("com.google.dagger.hilt.android")  //for DI
 }
 
 android {
@@ -71,4 +72,11 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
     //or workers
     implementation(libs.androidx.work.runtime.ktx)
+    //for DI
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+}
+// Allow references to generated code for DI
+kapt {
+    correctErrorTypes = true
 }
