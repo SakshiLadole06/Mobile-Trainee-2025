@@ -150,6 +150,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="23. Coil, Glide and Dark Theme"/>
+       <Button
+            android:id="@+id/btn24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="24. ViewModel and LiveData"/>
     </LinearLayout>
 </ScrollView>
 
