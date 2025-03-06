@@ -82,6 +82,12 @@ dependencies {
     //for coil
     implementation("io.coil-kt.coil3:coil:3.1.0")
     implementation("io.coil-kt.coil3:coil-network-okhttp:3.1.0")
+    // ViewModel with Kotlin extensions
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    // LiveData with Kotlin extensions
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    // (Optional) For lifecycle-aware components and coroutines support
+    implementation  ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
 }
 // Allow references to generated code for DI
 kapt {
