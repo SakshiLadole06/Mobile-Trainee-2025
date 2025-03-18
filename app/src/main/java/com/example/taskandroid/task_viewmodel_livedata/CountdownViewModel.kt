@@ -25,8 +25,8 @@ class CountdownViewModel:ViewModel() {
             while(temp>=0){
                 withContext(Dispatchers.Main) {
                     _timer.value=temp
-                    temp--
                 }
+                temp--
                 Log.d("ABC","$temp")
                 delay(1000)
             }
